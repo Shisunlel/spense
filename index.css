@@ -47,6 +47,7 @@ header {
   font-weight: 600;
   line-height: 1.5;
   padding: 1em 1.85em;
+  text-align: center;
 }
 
 .header {
@@ -94,6 +95,7 @@ nav {
   height: 50vh;
   background: var(--black) url(assets/hero_image.png) no-repeat top left;
   background-size: cover;
+  border-radius: 1em;
   margin: 2em 0;
 }
 
@@ -316,5 +318,82 @@ footer {
 
   .footer-link-container:nth-child(3){
     order: 4;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header{
+    padding: 2em 7em;
+  }
+
+  .navbar.collapse > .nav-item:nth-child(3){
+    margin-right: 15vw;
+  }
+
+  .nav-item:nth-child(5){
+    padding: 0;
+  }
+
+  .notify-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+  }
+
+  .hero-image{
+    height: 60vh;
+    order: 2;
+  }
+
+  .other-part{
+    padding: 2em;
+  }
+  
+  .company{
+    gap: 2em;
+  }
+
+  .company-container:nth-child(n + 6) {
+    display: block;
+  }
+
+  .learn-more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+    padding: 0 5em;
+  }
+
+  .phone-mockup{
+    max-width: 35vw;
+  }
+
+  .text-editor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .text-editor-image{
+    max-width: 50vw;
+  }
+
+  .editor-text{
+    order: 2;
+  }
+
+  .footer-content{
+    justify-content: center;
+  }
+
+  .footer-link-container:nth-child(1){
+    max-width: 40%;
+  }
+
+  .footer-link-container:nth-child(1) > p {
+    max-width: 75%;
+    font-size: .9rem;
   }
 }
